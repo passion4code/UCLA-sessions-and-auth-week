@@ -14,7 +14,7 @@ All Activities are in the `activies` folder.
 * Work with a MongoDB session storage.
     * https://www.npmjs.com/package/express-session#compatible-session-stores 
     * https://www.npmjs.com/package/connect-mongo
-* Complete Exercises 1-45
+* Complete Exercises 1-4
 
 
 ### Exercise 1 -- Sessions Demo
