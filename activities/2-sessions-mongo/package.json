@@ -1,0 +1,22 @@
+{
+  "name": "1-sessions",
+  "version": "1.0.0",
+  "description": "",
+  "author": "passion4code@gmail.com",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "connect-mongo": "^3.1.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "http-errors": "^1.7.3",
+    "pino": "^5.13.5",
+    "pino-http": "^4.3.0",
+    "pino-pretty": "^3.2.2"
+  }
+}

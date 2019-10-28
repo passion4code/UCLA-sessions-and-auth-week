@@ -1,0 +1,30 @@
+
+<div class="jumbotron">
+    <h1>Try to guess the login!</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <form method="POST" action="/login">
+                <div class="form-group">
+                    <label for="emailAddressInput">Email address</label>
+                    <!--
+                        Remember - the `name` properties are what get used 
+                        when the data payload is sent to the server in the form post 
+                    -->
+                    <input type="email" name="userEmail" class="form-control" id="emailAddressInput"
+                        aria-describedby="emailHelp" placeholder="Enter email" />
+                    <small id="emailHelp" class="form-text text-muted">Do not use a real email or passord.</small>
+                </div>
+                <div class="form-group">
+                    <label for="passwordInput">Password</label>
+                    <input type="password" name="userPassword" class="form-control" id="passwordInput"
+                        placeholder="Password" />
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+        </div>
+    </div>
+</div>
