@@ -1,10 +1,19 @@
 "use strict";
 const express = require("express");
 var exphbs  = require('express-handlebars');
-
+const session = require("express-session");
+const bodyParser = require("body-parser");
 
 // Create the express app
 const app = express();
+
+app.use(session({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: true
+}));
+
+app.use(bodyParser.urlencoded({extended: false}))
 
 // Template engine
 app.engine('handlebars', exphbs());
