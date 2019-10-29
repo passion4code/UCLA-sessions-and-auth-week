@@ -14,7 +14,7 @@ All Activities are in the `activies` folder.
 * Work with a MongoDB session storage.
     * https://www.npmjs.com/package/express-session#compatible-session-stores 
     * https://www.npmjs.com/package/connect-mongo
-* Complete Exercises 1-4
+* Complete Exercises 1-5
 
 
 ### Exercise 1 -- Sessions Demo
@@ -61,7 +61,14 @@ Students are challenged to update the code in exercise 4 to do the following:
 
 ### Hashing
 
-This isn't an exercise for this day, but point out that the password in the database is stored in plain text. This is bad for security reasons. Point out libraries that can help with "hashing" passwords, such as https://github.com/kelektiv/node.bcrypt.js  
+Point out that the password in the database is stored in plain text. This is bad for security reasons. Point out libraries that can help with "hashing" passwords, such as https://github.com/kelektiv/node.bcrypt.js  
+
+### Exercise 5 -- Command Line Hashing
+
+Create a command line application that hashes the string passed to it.
+
+Usage: node index.js somestringhere
+Output: {hashedvalueofsomestringhere}
 
 ## Day 2
 
