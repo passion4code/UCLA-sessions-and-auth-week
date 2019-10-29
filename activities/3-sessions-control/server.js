@@ -1,10 +1,12 @@
 "use strict";
 const express = require("express");
 var exphbs  = require('express-handlebars');
+const bodyParser = require("body-parser");
 
 
 // Create the express app
 const app = express();
+app.use( bodyParser.urlencoded({ extended: false }) );
 
 // Template engine
 app.engine('handlebars', exphbs());

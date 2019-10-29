@@ -18,7 +18,7 @@ router.get("/login", (req, res) => {
 
 // Handle the login form submission
 router.post("/login", (req, res) => {
-    const SECRET_USER = "secret_user";
+    const SECRET_USER = "secret@email.com";
     const SECRET_PASSWORD = "secret_password";
     // Here is where you will handle the form request to determine
     // if the posted username and password matches the "secret" username and password set above
