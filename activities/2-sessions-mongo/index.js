@@ -8,14 +8,16 @@ const session = require('express-session')
 const MongoStore = require('connect-mongo')(session);
 
 // Create the express app
-const app = express()
-
+const app = express();
+const mongoSessionOptions = {
+  url: 'mongodb://localhost/test-app'
+}
 app.use(session({
   secret: 'keyboard cat',
   resave: false,
   saveUninitialized: true,
   // and passing we pass a new instance of the MongoStore object into the session init
-  store: new MongoStore(options) 
+  store: new MongoStore(mongoSessionOptions) 
 }));
 
 // Routes and middleware
@@ -25,6 +27,7 @@ app.get('/', (req, res) => {
   } else {
     req.session.highScore = 1;
   }
+  console.log(`Session ID: ${req.session.id}`);
   res.send(`High score is ${req.session.highScore}`);
 });
 
