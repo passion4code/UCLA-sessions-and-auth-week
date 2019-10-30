@@ -70,10 +70,24 @@ Create a command line application that hashes the string passed to it.
 Usage: node index.js somestringhere
 Output: {hashedvalueofsomestringhere}
 
-## Day 2
+## Day 2 -- Password Hashing and React Sessions
 
-_@TODO_
+Exercises 6-8
 
-## Day 3
+### Exercise 6 -- Change app to use hashing
 
-_@TODO_
+The current application in this exercise lets you create create a user and saves the password in plain text. It also lets you "log in" by looking up that user by the email and password. 
+
+The challenge here is to change the application to use bcrypt to hash the password when the user is being created, then to change how the password hash is validated in the login POST route handler. 
+
+### Exercise 7 -- Sessions and React
+
+This is a demonstration all the way through. Demo the whole app as it works. Then, when walking through the code, start through the backend API route calls (note that we're using memory storage). Once the backend calls are covered, start working through the `client/App.js`
+
+### Exercise 8 -- Sessions and React Shared
+
+This is a demonstration of React Hooks for sharing state across multiple components, making authentication state management a bit easier. It will start off as a demonstration and it turns into an exercise to enhance the application. See the [exercise readme](./activities/8-sessions-react-shared-state/) for more details.
+
+## Day 3 -- Passport
+
+_Will be covered by alternate instructor_
